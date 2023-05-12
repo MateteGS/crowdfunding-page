@@ -23,6 +23,7 @@ ul {
     list-style: none;
     display: flex;
     gap:2rem;
+    font-size: 1.6rem;
 }
 
 li a {
@@ -34,6 +35,52 @@ li a {
     display: flex;
 }
 
+body {
+    background-color: rgb(242, 242, 242);
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  transform: translateY(-5rem);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 5rem;
+  position: relative;
+}
+
+.master {
+  position: absolute;
+  left: 45%;
+  top: 36%;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 2.9rem;
+}
+
+h2 {
+   font-size: 2.2rem;
+}
+
+p {
+  font-size: 1.6rem;
+  color: var(--Darkgray);
+}
+
+button {
+   background-color: var(--Darkcyan);
+   color: white;
+   padding: 1.5rem 3rem;
+   border: none;
+   border-radius: 30px;
+}
+
+.numbers {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
 
 header {
     background-image: url(images/image-hero-desktop.jpg);
@@ -42,7 +89,153 @@ header {
 }
 
 header .flex {
+    padding-top: 4rem;
     margin: 0 10rem;
     justify-content: space-between;
+}
+
+header .menu {
+    display: none;
+}
+
+/* first section */
+
+.one {
+    text-align: center;
+    padding: 4rem 6rem;
+    line-height: 4rem;
+    background-color: white;
+}
+.one .flex {
+    justify-content: space-between;
+}
+
+.one button {
+    margin-top: 2rem;
+   
+}
+
+.one button:nth-child(2) {
+  background-color: gainsboro;
+  font-weight: 700;
+  color: var(--Darkgray);
+
+ padding: 0;
+ padding-right: 10rem;
+ position: relative;
+}
+
+.bookmark {
+    height: auto;
+    padding: -2rem;
+}
+
+label {
+    position: absolute;
+    left: 45%;
+    top: 35%;
+}
+
+/* section two */
+
+.two {
+    margin-top: 3rem;
+    padding-bottom: 5rem;
+    background-color: white;
+}
+
+.numbers {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.line {
+    
+    height: 6rem;
+    background-color: var(--Darkgray);
+    width: 1px;
+    
+}
+
+.two .flex {
+    padding: 5rem 20rem 5rem 5rem;
+    justify-content: space-between;
+}
+
+.loading {
+    width: 86%;
+    height: 1.5rem;
+    background-color: lightgray;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+.load {
+    width: 80%;
+    height: 1.5rem;
+    background-color: var(--Darkcyan);
+    border-radius: 10px;
+}
+
+
+/* three */
+.three{
+   margin-top: 3rem;
+   padding: 5rem;
+   line-height: 3rem;
+   background-color: white;
+}
+
+.space {
+    padding: 2.2rem 0;
+}
+
+.box{
+    border: 1px solid var(--Darkgray);
+    border-radius: 5px;
+    padding: 4rem;
+    margin-top: 3rem;
+}
+
+.box .flex{
+    justify-content: space-between;
+}
+
+.flex2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.box p{
+    padding: 1rem 0;
+}
+
+.green {
+    color: var(--Darkcyan);
+    font-weight: 500;
+}
+
+.last {
+    opacity: 0.5;
+}
+
+.last button {
+    background-color: grey;
+}
+
+@media (max-width: 500px) {
+    header .menu {
+        display: block;
+        font-size: 3rem;
+    }
+
+    header .flex{
+        margin: 0;
+        padding: 3rem;
+    }
+
+    ul {
+        display: none;
+    }
 }
 
